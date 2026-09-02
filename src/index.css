@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Quicksand", sans-serif;
+  --font-body: "Quicksand", sans-serif;
+  --font-display: "Fredoka", sans-serif;
+
+  --color-brand-primary: #0061a4;
+  --color-brand-primary-dark: #00497d;
+  --color-brand-primary-light: #2196f3;
+  --color-brand-primary-pale: #d1e4ff;
+  --color-brand-secondary: #f9e534;
+  --color-brand-secondary-dark: #706500;
+  --color-brand-tertiary: #bb1614;
+  --color-brand-tertiary-light: #ff5748;
+  --color-brand-canvas: #fbfaee;
+  --color-brand-surface: #ffffff;
+  --color-brand-surface-low: #f5f4e8;
+  --color-brand-surface-dim: #dbdbcf;
+  --color-brand-ink: #1b1c15;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-brand-canvas);
+  color: var(--color-brand-ink);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headline);
+}
+
+button, .font-fredoka {
+  font-family: var(--font-display);
+}
+
+/* 3D Tactile Buttons inspired by design spec */
+.tactile-btn {
+  box-shadow: 0 4px 0 #00497d;
+  transition: all 0.12s ease;
+}
+.tactile-btn:active {
+  box-shadow: 0 0 0 transparent;
+  transform: translateY(4px);
+}
+
+.tactile-btn-yellow {
+  box-shadow: 0 4px 0 #8c7b00;
+  transition: all 0.12s ease;
+}
+.tactile-btn-yellow:active {
+  box-shadow: 0 0 0 transparent;
+  transform: translateY(4px);
+}
+
+.tactile-card {
+  box-shadow: 0 6px 20px -3px rgba(0, 97, 164, 0.08), 0 2px 6px -2px rgba(0, 0, 0, 0.04);
+}
+
+.tactile-card:hover {
+  box-shadow: 0 12px 28px -4px rgba(0, 97, 164, 0.15), 0 4px 10px -2px rgba(0, 0, 0, 0.05);
+}
+
